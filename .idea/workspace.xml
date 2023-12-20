@@ -8,17 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/db.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/redis.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/server.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702902670002</updated>
       <workItem from="1702902671540" duration="4365000" />
+      <workItem from="1702975337762" duration="1762000" />
     </task>
     <servers />
   </component>
