@@ -22,7 +22,7 @@ impl  DatabaseConfig{
         )
     }
     pub fn check_if_db_parameters_is_empty(&self) ->bool{
-        self::get_db_params(
+        self::is_db_params_is_empty(
             &self.username,
             &self.password,
             &self.port,
@@ -37,7 +37,7 @@ impl  DatabaseConfig{
     }
 }
 
-fn get_db_params(username: &String, password: &String, port: &u16, host: &String, database_name: &String) -> bool {
+fn is_db_params_is_empty(username: &String, password: &String, port: &u16, host: &String, database_name: &String) -> bool {
     if username.trim().is_empty(){
         return  false
     }
@@ -46,4 +46,22 @@ fn get_db_params(username: &String, password: &String, port: &u16, host: &String
 
 fn create_connection_string(username: &String, password: &String, port: &u16, host: &String, database_name: &String) -> String {
     format!("postgres://{username}:{password}@{host}:{port}/{database_name}")
+}
+
+
+#[cfg(test)]
+ pub  mod test{
+    use super::*;
+    #[test]
+    pub fn db_string_connection_test(){
+        let config=DatabaseConfig{
+            username: "Mooha".to_string(),
+            password: "cade".to_string(),
+            port: 3663,
+            host: "127.0.0.1".to_string(),
+            max_connections: 0,
+            database_name: "myDB".to_string(),
+        };
+        assert_eq!(config.get_url(),"postgres://Mooha:cade@127.0.0.1:3663/myDB")
+    }
 }

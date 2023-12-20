@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/server.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/server.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/db.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cargo.Test db::test::db_string_connection_test.executor": "Run",
     "Cargo.Test server::tests.executor": "Run",
     "Cargo.Test server::tests::app_config_http_addr_test.executor": "Run",
     "Cargo.Test server::tests::app_config_http_addrs_is_empty_test.executor": "Run",
@@ -72,7 +73,24 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Test server::tests::app_config_http_addrs_is_empty_test">
+  <component name="RunManager" selected="Cargo.Test db::test::db_string_connection_test">
+    <configuration name="Test db::test::db_string_connection_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package config --bin config db::test::db_string_connection_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test server::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package config --bin config server::tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -126,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test db::test::db_string_connection_test" />
         <item itemvalue="Cargo.Test server::tests::app_config_http_addrs_is_empty_test" />
         <item itemvalue="Cargo.Test server::tests" />
         <item itemvalue="Cargo.Test server::tests::app_config_http_addr_test" />
@@ -144,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702902670002</updated>
       <workItem from="1702902671540" duration="4365000" />
-      <workItem from="1702975337762" duration="3447000" />
+      <workItem from="1702975337762" duration="4140000" />
     </task>
     <servers />
   </component>
