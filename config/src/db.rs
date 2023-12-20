@@ -64,4 +64,17 @@ fn create_connection_string(username: &String, password: &String, port: &u16, ho
         };
         assert_eq!(config.get_url(),"postgres://Mooha:cade@127.0.0.1:3663/myDB")
     }
+    #[test]
+    pub fn is_db_string_connection_empty_test(){
+        let config =DatabaseConfig{
+            username: "".to_string(),
+            password: "".to_string(),
+            port: 0,
+            host: "".to_string(),
+            max_connections: 0,
+            database_name: "".to_string(),
+        };
+        assert_eq!(config.check_if_db_parameters_is_empty(),false)
+
+    }
 }
