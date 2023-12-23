@@ -1,7 +1,9 @@
 
 [workspace]
 members = [
-  "config"
+  "config",
+  "utils",
+  "errors"
 ]
 
 [workspace.package]
