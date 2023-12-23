@@ -8,14 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/errors/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/hash.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/password.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Biller_Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/random.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,69 +58,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cargo.Expand utils.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Expand utils::password.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test db::test::db_string_connection_empty_test.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test db::test::db_string_connection_test.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test hash.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test hash::tests::test_argon_hash.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test password.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test password::tests::hash_password_test.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test server::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test server::tests::app_config_http_addr_test.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test server::tests::app_config_http_addrs_is_empty_test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/lib.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/password.rs&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Expand utils.executor": "Run",
+    "Cargo.Expand utils::password.executor": "Run",
+    "Cargo.Test db::test::db_string_connection_empty_test.executor": "Run",
+    "Cargo.Test db::test::db_string_connection_test.executor": "Run",
+    "Cargo.Test hash.executor": "Run",
+    "Cargo.Test hash::tests::test_argon_hash.executor": "Run",
+    "Cargo.Test password.executor": "Run",
+    "Cargo.Test password::tests::hash_password_test.executor": "Run",
+    "Cargo.Test random::test::test_generate_random_string.executor": "Run",
+    "Cargo.Test random::test::test_generate_random_string_with_prefix.executor": "Run",
+    "Cargo.Test server::tests.executor": "Run",
+    "Cargo.Test server::tests::app_config_http_addr_test.executor": "Run",
+    "Cargo.Test server::tests::app_config_http_addrs_is_empty_test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/lib.rs": "true",
+    "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/password.rs": "true",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Cargo.Test hash::tests::test_argon_hash">
-    <configuration name="Expand utils" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="expand --lib --color=always --theme=Dracula --tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/utils" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Expand utils::password" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="expand --lib --color=always --theme=Dracula --tests password" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/utils" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Cargo.Test random::test::test_generate_random_string_with_prefix">
     <configuration name="Test hash::tests::test_argon_hash" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package utils --lib hash::tests::test_argon_hash -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -177,13 +140,47 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test random::test::test_generate_random_string" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package utils --lib random::test::test_generate_random_string -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test random::test::test_generate_random_string_with_prefix" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package utils --lib random::test::test_generate_random_string_with_prefix -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test random::test::test_generate_random_string_with_prefix" />
+        <item itemvalue="Cargo.Test random::test::test_generate_random_string" />
         <item itemvalue="Cargo.Test hash::tests::test_argon_hash" />
         <item itemvalue="Cargo.Test password::tests::hash_password_test" />
         <item itemvalue="Cargo.Test password" />
-        <item itemvalue="Cargo.Expand utils::password" />
-        <item itemvalue="Cargo.Expand utils" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +200,7 @@
       <workItem from="1703143840529" duration="724000" />
       <workItem from="1703165205853" duration="642000" />
       <workItem from="1703226677455" duration="4470000" />
-      <workItem from="1703315819097" duration="1510000" />
+      <workItem from="1703315819097" duration="3062000" />
     </task>
     <servers />
   </component>
