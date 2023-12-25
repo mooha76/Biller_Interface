@@ -8,8 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/src/random.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/http.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/profile.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/file.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Biller_Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,12 +67,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2ZiQxrDeQaSroXVF37bk96JT0Da" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Cargo.Expand utils.executor": "Run",
     "Cargo.Expand utils::password.executor": "Run",
     "Cargo.Test db::test::db_string_connection_empty_test.executor": "Run",
@@ -73,6 +90,7 @@
     "Cargo.Test server::tests.executor": "Run",
     "Cargo.Test server::tests::app_config_http_addr_test.executor": "Run",
     "Cargo.Test server::tests::app_config_http_addrs_is_empty_test.executor": "Run",
+    "Cargo.Test tests::test_profile_to_string.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -82,32 +100,17 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/config/src/lib.rs": "true",
+    "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/constants/src/lib.rs": "true",
     "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/lib.rs": "true",
     "org.rust.disableDetachedFileInspection//wsl.localhost/CentOS8/root/Rust/Biller_Interface/utils/src/password.rs": "true",
     "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Test random::test::test_generate_random_string_with_prefix">
+  <component name="RunManager" selected="Cargo.Test tests::test_profile_to_string">
     <configuration name="Test hash::tests::test_argon_hash" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package utils --lib hash::tests::test_argon_hash -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test password" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package utils --lib password" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -174,13 +177,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test tests::test_profile_to_string" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package config --lib tests::test_profile_to_string -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_profile_to_string" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string_with_prefix" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string" />
         <item itemvalue="Cargo.Test hash::tests::test_argon_hash" />
         <item itemvalue="Cargo.Test password::tests::hash_password_test" />
-        <item itemvalue="Cargo.Test password" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +220,8 @@
       <workItem from="1703143840529" duration="724000" />
       <workItem from="1703165205853" duration="642000" />
       <workItem from="1703226677455" duration="4470000" />
-      <workItem from="1703315819097" duration="3062000" />
+      <workItem from="1703315819097" duration="5221000" />
+      <workItem from="1703505281122" duration="3177000" />
     </task>
     <servers />
   </component>
@@ -249,5 +270,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

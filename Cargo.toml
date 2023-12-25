@@ -3,7 +3,9 @@
 members = [
   "config",
   "utils",
-  "errors"
+  "errors",
+  "constants",
+  "client"
 ]
 
 [workspace.package]

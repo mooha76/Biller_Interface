@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/config/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/errors/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/utils/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/constants/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
