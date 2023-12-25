@@ -31,7 +31,7 @@ pub struct AppConfig {
 impl AppConfig {
     pub fn read() -> Result<Self, config::ConfigError> {
         let config_dir =
-            utils::file::root_dir("settings").map_err(|e| ConfigError::Message(e.to_string()))?;
+            utils::file::root_dir("appconfig").map_err(|e| ConfigError::Message(e.to_string()))?;
         let profile: AppProfile = std::env::var("APP_PROFILE")
             .unwrap_or_else(|_| "dev".into())
             .try_into()

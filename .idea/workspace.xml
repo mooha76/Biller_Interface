@@ -8,22 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/http.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/http.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/profile.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/file.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Biller_Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig/dev.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/postgres.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +77,7 @@
     "Cargo.Test hash::tests::test_argon_hash.executor": "Run",
     "Cargo.Test password.executor": "Run",
     "Cargo.Test password::tests::hash_password_test.executor": "Run",
+    "Cargo.Test postgres::tests::test_postgres_connection.executor": "Run",
     "Cargo.Test random::test::test_generate_random_string.executor": "Run",
     "Cargo.Test random::test::test_generate_random_string_with_prefix.executor": "Run",
     "Cargo.Test server::tests.executor": "Run",
@@ -94,6 +87,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "//wsl.localhost/CentOS8/root/Rust/Biller_Interface/appconfig",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +102,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Test tests::test_profile_to_string">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\CentOS8\root\Rust\Biller_Interface\appconfig" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cargo.Test postgres::tests::test_postgres_connection">
     <configuration name="Test hash::tests::test_argon_hash" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package utils --lib hash::tests::test_argon_hash -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -126,8 +125,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test password::tests::hash_password_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package utils --lib password::tests::hash_password_test -- --exact" />
+    <configuration name="Test postgres::tests::test_postgres_connection" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package client --lib postgres::tests::test_postgres_connection -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -196,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test postgres::tests::test_postgres_connection" />
         <item itemvalue="Cargo.Test tests::test_profile_to_string" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string_with_prefix" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string" />
         <item itemvalue="Cargo.Test hash::tests::test_argon_hash" />
-        <item itemvalue="Cargo.Test password::tests::hash_password_test" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +220,7 @@
       <workItem from="1703165205853" duration="642000" />
       <workItem from="1703226677455" duration="4470000" />
       <workItem from="1703315819097" duration="5221000" />
-      <workItem from="1703505281122" duration="3177000" />
+      <workItem from="1703505281122" duration="8641000" />
     </task>
     <servers />
   </component>
