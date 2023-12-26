@@ -61,6 +61,7 @@ serde_json = "1.0.105"
 sha2 = "0.10.7"
 sqlx = {version = "0.7.1", default-features = false, features = [
   "postgres",
+  "mysql", "time",
   "runtime-tokio-rustls",
   "chrono",
   "uuid",

@@ -9,9 +9,12 @@ pub mod redis;
 pub mod http;
 pub mod server;
 pub mod profile;
+pub mod mysql;
+
+
 use self::{
     db::DatabaseConfig, http::HttpClientConfig, redis::RedisConfig,
-    server::ServerConfig, profile::AppProfile
+    server::ServerConfig, profile::AppProfile , mysql::MysqlDatabaseConfig
 };
 
 
@@ -23,7 +26,8 @@ pub struct AppConfig {
     pub db:DatabaseConfig,
     pub http: HttpClientConfig,
     pub redis: RedisConfig,
-    pub profile:  AppProfile
+    pub profile:  AppProfile,
+    pub mysqldb: MysqlDatabaseConfig
 }
 
 
