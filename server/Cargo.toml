@@ -1,0 +1,28 @@
+[package]
+name = "server"
+authors.workspace = true
+description.workspace = true
+edition.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+axum = { workspace = true }
+anyhow = {workspace = true}
+async-trait = {workspace = true}
+client = {path = "../client"}
+config = {path = "../config"}
+constants = {path = "../constants"}
+errors = {path = "../errors"}
+futures = {workspace = true}
+initialize = {path = "../initialize"}
+test-context = {workspace = true}
+tokio = {workspace = true}
+tracing = {workspace = true}
+
