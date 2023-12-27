@@ -12,3 +12,23 @@ version.workspace = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+actix-web = {workspace = true}
+client = {path = "../client"}
+config = {path = "../config"}
+constants = {path = "../constants"}
+errors = {path = "../errors"}
+
+
+sentry-actix = {workspace = true}
+server = {path = "../server"}
+
+sqlx = {workspace = true}
+initialize = {path = "../initialize"}
+test-context = {workspace = true}
+tokio = {workspace = true}
+tracing = {workspace = true}
+tracing-actix-web = {workspace = true}
+tracing-appender = {workspace = true}
+tracing-bunyan-formatter = {workspace = true}
+tracing-subscriber = {workspace = true}
+uuid = {workspace = true}

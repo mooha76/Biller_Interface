@@ -5,7 +5,10 @@ members = [
   "utils",
   "errors",
   "constants",
-  "client"
+  "client",
+  "initialize",
+  "server",
+  "app"
 ]
 
 [workspace.package]
@@ -19,6 +22,7 @@ repository = "https://github.com/mooha76/Biller_Interface"
 version = "0.1.0"
 
 [workspace.dependencies]
+axum = "0.7.2"
 actix-cors = "0.6.4"
 actix-files = "0.6.2"
 actix-multipart = "0.6.0"

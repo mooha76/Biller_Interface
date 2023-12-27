@@ -10,6 +10,7 @@ pub mod http;
 pub mod server;
 pub mod profile;
 pub mod mysql;
+pub mod logtracer;
 
 
 use self::{

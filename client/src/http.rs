@@ -6,11 +6,11 @@ use config::http::HttpClientConfig;
 pub type HttpClient = reqwest::Client;
 #[async_trait]
 pub trait HttpClientInit{
-    fn new(config : &HttpClientConfig)-> Result<reqwest::Client , reqwest::Error>;
+    fn build(config : &HttpClientConfig)-> Result<reqwest::Client , reqwest::Error>;
 }
 #[async_trait]
 impl HttpClientInit for HttpClient{
-    fn new(config: &HttpClientConfig) -> Result<HttpClient, reqwest::Error> {
+    fn build(config: &HttpClientConfig) -> Result<HttpClient, reqwest::Error> {
         reqwest::Client::builder()
             .timeout(Duration::from_secs(config.timeout))
             .build()

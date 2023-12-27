@@ -11,3 +11,12 @@ username = "mooha"
 password = "mooha"
 max_connections = 5
 database_name = "mydb"
+
+
+[mysqldb]
+host = "127.0.0.1"
+port = 3306
+username = "mooha"
+password = "mooha"
+max_connections = 5
+database_name = "mydb"

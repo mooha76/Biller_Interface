@@ -8,14 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/mysql.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/mysql.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Biller_Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appconfig/dev.toml" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/dev.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/client/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/mysql.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/mysql.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/logtracer.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/logtracer.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/mysql.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/mysql.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initialize/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/initialize/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initialize/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/initialize/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/init_postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run/init_postgres.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +81,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Cargo.Expand utils.executor": "Run",
     "Cargo.Expand utils::password.executor": "Run",
+    "Cargo.Run app.executor": "Run",
     "Cargo.Test db::test::db_string_connection_empty_test.executor": "Run",
     "Cargo.Test db::test::db_string_connection_test.executor": "Run",
     "Cargo.Test hash.executor": "Run",
@@ -87,7 +98,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "//wsl.localhost/CentOS8/root/Rust/Biller_Interface/appconfig",
+    "last_opened_file_path": "//wsl.localhost/CentOS8/root/Rust/Biller_Interface/run",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,12 +115,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\CentOS8\root\Rust\Biller_Interface\run" />
+      <recent name="\\wsl.localhost\CentOS8\root\Rust\Biller_Interface" />
       <recent name="\\wsl.localhost\CentOS8\root\Rust\Biller_Interface\appconfig" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test postgres::tests::test_postgres_connection">
-    <configuration name="Test hash::tests::test_argon_hash" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package utils --lib hash::tests::test_argon_hash -- --exact" />
+  <component name="RunManager" selected="Cargo.Run app">
+    <configuration name="Run app" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package app --bin app" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -195,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run app" />
         <item itemvalue="Cargo.Test postgres::tests::test_postgres_connection" />
         <item itemvalue="Cargo.Test tests::test_profile_to_string" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string_with_prefix" />
         <item itemvalue="Cargo.Test random::test::test_generate_random_string" />
-        <item itemvalue="Cargo.Test hash::tests::test_argon_hash" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +233,7 @@
       <workItem from="1703165205853" duration="642000" />
       <workItem from="1703226677455" duration="4470000" />
       <workItem from="1703315819097" duration="5221000" />
-      <workItem from="1703505281122" duration="15200000" />
+      <workItem from="1703505281122" duration="27498000" />
     </task>
     <servers />
   </component>

@@ -49,5 +49,5 @@ fn is_db_params_is_empty(username: &String, password: &String, port: &u16, host:
 }
 
 fn create_connection_string(username: &String, password: &String, port: &u16, host: &String, database_name: &String) -> String {
-    format!("postgres://{username}:{password}@{host}:{port}/{database_name}")
+    format!("mysql://{username}:{password}@{host}:{port}/{database_name}")
 }
