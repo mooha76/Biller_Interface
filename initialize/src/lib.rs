@@ -1,7 +1,7 @@
 use client::{
     http::{HttpClient, HttpClientInit},
-    postgres::{PgClient, PgPoolInit},
-    mysql::{MysqlClient, MySqlPoolInit}
+    postgres::{PgClient , PgPoolExt},
+    mysql::{MySqlPoolClient , MySqlPoolExt}
 
 };
 use config::AppConfig;
@@ -11,15 +11,15 @@ pub struct   InitializeApp{
     pub config:AppConfig,
     pub postgres:PgClient,
     pub http:HttpClient,
-    pub mysql :MysqlClient
+    pub mysql :MySqlPoolClient
 }
 
 
 impl InitializeApp{
     pub async fn new(config :AppConfig)->AppResult<Self>{
         let postgres =PgClient::new(&config.db).await?;
-        let mysql =MysqlClient::new(&config.mysqldb).await?;
-        let http=HttpClient::build(&config.http).await?;
+        let mysql =MySqlPoolClient::new(&config.mysqldb).await?;
+        let http = HttpClient::build(&config.http)?;
 
     Ok(Self{
         postgres,

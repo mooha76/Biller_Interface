@@ -1,26 +1,34 @@
 use async_trait::async_trait;
+
+
 use sqlx::mysql::{MySqlConnectOptions, MySqlPoolOptions};
+use sqlx::{Connection, Error, Executor, MySqlConnection, MySqlPool};
 
-use sqlx::mysql::MySqlPool;
+use tracing::info;
 
+use config::db::DatabaseConfig;
 use config::mysql::MysqlDatabaseConfig;
-pub type MysqlClient =MySqlPoolOptions;
-#[async_trait]
+use errors::AppResult;
 
-pub trait MySqlPoolInit: Sized {
-    fn new(config: &MysqlDatabaseConfig) -> Result<Self, sqlx::Error>;
+pub type MySqlPoolClient = MySqlPool;
+
+
+
+#[async_trait]
+pub trait MySqlPoolExt: Sized {
+    async fn new(config: &MysqlDatabaseConfig) -> Result<Self, sqlx::Error>;
 }
 
 #[async_trait]
-impl MySqlPoolInit for MysqlClient {
-    fn new(config: &MysqlDatabaseConfig) -> Result<Self, sqlx::Error> {
-        let pool = sqlx::mysql::MySqlPoolOptions::new()
+impl MySqlPoolExt for MySqlPool {
+    async fn new(config: &MysqlDatabaseConfig) -> Result<Self, sqlx::Error> {
+        MySqlPoolOptions::new()
             .max_connections(config.max_connections)
-            .connect_with(config.get_options());
-        Ok(pool)
+            .connect(&config.get_url())
+            .await
     }
 }
 
-async fn get_mysql_connection(mysql_options: &MySqlConnectOptions) -> sqlx::Result<sqlx::mysql::MySqlConnection> {
-    sqlx::mysql::MySqlConnection::connect_with(mysql_options).await
+async fn get_mysql_connection(mysql_options: &MySqlConnectOptions) -> sqlx::Result<MySqlConnection> {
+    MySqlConnection::connect_with(mysql_options).await
 }

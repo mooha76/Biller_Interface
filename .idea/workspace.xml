@@ -8,24 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa4bbac-2134-4dcb-84c0-3ff43eeb9569" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Biller_Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Biller_Interface.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appconfig/dev.toml" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/dev.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/client/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/http.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/mysql.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/mysql.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/logtracer.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/logtracer.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/mysql.rs" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/mysql.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initialize/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/initialize/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/postgres.rs" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/postgres.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/initialize/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/initialize/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/init_postgres.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run/init_postgres.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +221,7 @@
       <workItem from="1703165205853" duration="642000" />
       <workItem from="1703226677455" duration="4470000" />
       <workItem from="1703315819097" duration="5221000" />
-      <workItem from="1703505281122" duration="27498000" />
+      <workItem from="1703505281122" duration="34268000" />
     </task>
     <servers />
   </component>
